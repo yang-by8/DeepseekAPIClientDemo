@@ -1,0 +1,3 @@
+装一下Node.js, 然后cmd 到这个目录下，用 npm run dev 就可运行服务了，
+再用打开它显示的网址就可以了。
+注意：deepseekapi的token要换成有效的

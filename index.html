@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 客户端(deepseekapi)</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 >AI 聊天   </h1>
+     <h5 style="text-align: left;width:550px;">( Deepseek API 版 )</h5>
+      <div class="model-selector">
+        <label for="model">选择大模型:</label>
+        <select id="model">
+           <option value="deepseek-chat">deepseek-chat</option>
+           <option value="deepseek-reasoner">deepseek-reasoner</option>
+        </select>
+        </select>
+      </div>
+    </header>
+    
+    <main>
+      <div id="chat-container" class="chat-container"></div>
+      
+      <div class="input-area">
+        <textarea 
+          id="user-input" 
+          placeholder="输入你的消息..."
+          rows="3"
+        ></textarea>
+        <button id="send-btn">发 &nbsp;&nbsp;&nbsp; 送</button>
+      </div>
+
+    </main>
+    
+    <footer>
+      <p>连接到 Deepseek API 服务 | <span id="connection-status">未连接</span></p>
+    </footer>
+  </div>
+  <script type="module" src="/src/deepseekapi_main.js"></script>
+</body>
+</html>
